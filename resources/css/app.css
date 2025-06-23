@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.fc .fc-event {
+    background-color: #3b82f6 !important; /* biru cerah */
+    color: white !important;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 2px 6px;
+}
+
+.fc .fc-event:hover {
+    background-color: #2563eb !important;
+    cursor: pointer;
+}
+
+.fc .fc-daygrid-day-number {
+    color: #e5e7eb !important; /* abu terang */
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+    border-color: #374151;
+    background-color: #1f2937;
+}
+
+.fc-toolbar-title {
+    color: #f3f4f6;
+}
+
+.fc-button {
+    background-color: #374151;
+    border: none;
+    color: white;
+}
+
+.fc-button:hover {
+    background-color: #4b5563;
+}
+.fc .fc-col-header-cell-cushion {
+    color: #ffffff !important; 
+    font-weight: bold;
+    font-size: 1rem;
+}
