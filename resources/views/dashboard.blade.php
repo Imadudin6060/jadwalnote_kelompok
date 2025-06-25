@@ -17,7 +17,7 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg p-6">
-                <h3 class="text-xl font-bold mb-4 text-white">📅 Kalender Jadwal</h3>
+                <h3 class="text-xl font-bold mb-4 text-black">📅 Kalender Jadwal</h3>
                 <div id="calendar"></div>
             </div>
         </div>

@@ -13,7 +13,7 @@
                     ➕ Tambah Catatan / Jadwal
                 </a>
 
-                <table class="min-w-full divide-y divide-gray-200 text-white">
+                <table class="min-w-full divide-y divide-gray-200 text-black">
                     <thead>
                         <tr>
                             <th class="px-6 py-3 text-left">Judul</th>

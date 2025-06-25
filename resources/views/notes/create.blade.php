@@ -12,17 +12,17 @@
                     @csrf
 
                     <div class="mb-4">
-                        <label for="title" class="block text-sm font-medium text-white">Judul</label>
+                        <label for="title" class="block text-sm font-medium text-black">Judul</label>
                         <input type="text" name="title" id="title" class="w-full rounded p-2" required>
                     </div>
 
                     <div class="mb-4">
-                        <label for="schedule_date" class="block text-sm font-medium text-white">Tanggal</label>
+                        <label for="schedule_date" class="block text-sm font-medium text-black">Tanggal</label>
                         <input type="date" name="schedule_date" id="schedule_date" class="w-full rounded p-2" required>
                     </div>
 
-                    <div class="mb-4">
-                        <label for="content" class="block text-sm font-medium text-white">Isi Catatan</label>
+                    <div class="mb-
+                        <label for="content" class="block text-sm font-medium text-black">Isi Catatan</label>
                         <textarea name="content" id="content" rows="4" class="w-full rounded p-2"></textarea>
                     </div>
 
