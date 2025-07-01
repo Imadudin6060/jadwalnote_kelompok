@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Note;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\NoteController;
+use App\Http\Controllers\AdminController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -49,6 +50,10 @@ Route::middleware(['auth'])->group(function () {
             return response()->json(['error' => $e->getMessage()], 500);
         }
     })->name('calendar.events');
+    Route::get('/admin/users', [AdminController::class, 'index'])->name('admin.users');
+    Route::delete('/admin/users/{id}', [App\Http\Controllers\AdminController::class, 'destroy'])->name('admin.users.destroy');
+
+
 });
 
 require __DIR__.'/auth.php';
