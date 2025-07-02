@@ -5,6 +5,8 @@
     <title>JadwalNote | Aplikasi Catatan & Jadwal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </head>
 <body class="bg-white text-gray-800">
 
@@ -18,10 +20,12 @@
     </nav>
 
     <!-- Hero -->
-    <section class="text-center py-20 px-6 bg-gradient-to-r from-blue-100 to-white">
-        <h2 class="text-4xl font-extrabold mb-4 text-blue-700">Atur Jadwal & Catatanmu Lebih Mudah</h2>
-        <p class="text-lg mb-6 text-gray-600">Aplikasi digital yang bantu kamu tetap produktif dan terorganisir.</p>
-        <a href="{{ route('login') }}" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Mulai Sekarang</a>
+    <section class="text-center py-20 px-6 bg-gradient-to-r from-blue-100 to-white" style="background-image: url('{{ asset('images/imagee.jpg') }}');">
+        <div>
+            <h2 class="text-4xl font-extrabold mb-4 text-white">Atur Jadwal & Catatanmu Lebih Mudah</h2>
+            <p class="text-lg mb-6 text-gray-600">Aplikasi digital yang bantu kamu tetap produktif dan terorganisir.</p>
+            <a href="{{ route('login') }}" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Mulai Sekarang</a>
+        </div>
     </section>
 
     <!-- Fitur -->
