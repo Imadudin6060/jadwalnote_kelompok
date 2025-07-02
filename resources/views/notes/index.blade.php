@@ -13,20 +13,20 @@
                     ➕ Tambah Catatan / Jadwal
                 </a>
 
-                <table class="min-w-full divide-y divide-gray-200 text-black">
-                    <thead>
+                <table class="min-w-full text-gray-800 dark:text-gray-100">
+                    <thead class="bg-gray-100 dark:bg-gray-700">
                         <tr>
-                            <th class="px-6 py-3 text-left">Judul</th>
-                            <th class="px-6 py-3 text-left">Tanggal</th>
-                            <th class="px-6 py-3 text-left">Isi Catatan</th>
+                            <th class="px-6 py-3 text-left font-semibold">Judul</th>
+                            <th class="px-6 py-3 text-left font-semibold">Tanggal</th>
+                            <th class="px-6 py-3 text-left font-semibold">Isi Catatan</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="divide-y divide-gray-300 dark:divide-gray-600">
                         @forelse ($notes as $note)
-                            <tr class="border-t border-gray-700">
-                                <td class="px-6 py-2">{{ $note->title }}</td>
-                                <td class="px-6 py-2">{{ \Carbon\Carbon::parse($note->schedule_date)->format('d M Y') }}</td>
-                                <td class="px-6 py-2">{{ $note->content }}</td>
+                            <tr class="hover:bg-gray-50 dark:hover:bg-gray-700">
+                                <td class="px-6 py-3">{{ $note->title }}</td>
+                                <td class="px-6 py-3">{{ \Carbon\Carbon::parse($note->schedule_date)->format('d M Y') }}</td>
+                                <td class="px-6 py-3">{{ $note->content }}</td>
                             </tr>
                         @empty
                             <tr>
