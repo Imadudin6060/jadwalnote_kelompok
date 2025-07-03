@@ -2,23 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User; // Pastikan ini TIDAK ADA // di depannya
-use Illuminate\Http\Request; // Pastikan ini juga ada
+use App\Models\User; 
+use Illuminate\Http\Request; 
 
 class AdminController extends Controller
 {
     public function index()
     {
-        $users = User::all(); // Ambil semua data user
-        return view('admin.users', compact('users')); // Kirimkan $users ke view
+        $users = User::all(); 
+        return view('admin.users', compact('users')); 
     }
 
-    // Metode destroy untuk menghapus pengguna
-    public function destroy(User $user) // Gunakan Route Model Binding di sini
+    public function destroy(User $user) 
     {
-        $user->delete(); // Hapus user dari database
+        $user->delete(); 
 
-        // Redirect kembali ke halaman admin users dengan pesan sukses
+        
         return redirect()->route('admin.users')->with('success', 'Pengguna berhasil dihapus!');
     }
 }
